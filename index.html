@@ -3,15 +3,749 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>
-
-    </title>
+    <title>Pramod Films</title>
     <meta name="author" content="">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.3/dist/flickity.min.css">
     <link rel="stylesheet" href="/css/tachyons.css">
+    <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/waypoints@4.0.0/lib/jquery.waypoints.min.js"></script>
+    <script src="https://unpkg.com/waypoints@4.0.0/lib/shortcuts/sticky.min.js"></script>
+    <script src="https://unpkg.com/flickity@2.0.3/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/velocity-animate@1.2.3/velocity.min.js"></script>
+    <script src="https://unpkg.com/velocity-animate@1.2.3/velocity.ui.min.js"></script>
+    <script src=""></script>
+    <script src="/js/site.js"></script>
   </head>
-  <body>
+  <body class="baskerville">
+    <div class="bg">
+      <video autoplay="true" id="bgvid" loop="" class="on">
+        <source src="videos/projector.mp4" type="video/mp4">
+      </video>
+    </div>
+    <section id="home" class="h-vh bg-yellow-80 relative">
+      <div class="w-60 tc absolute absolute-center white">
+        <img src="images/logo-white.png" class="center pb2 intro" alt="">
+        <div class="intro" style="height: 3px; background: #fff; width: 100px;margin: 0 auto;margin-top: 0.5rem;margin-bottom: 0.5rem;"></div>
+        <div class="f1 fw7 db tiempos ttu white-80 mt3 mb3 intro">Pramod Films</div>
+        <div class="lh-copy intro" style="font-size:1.1rem">Pramod Films is one of India's most prestigious film production houses. With its first film dating back to 1958, its history is closely intertwined with that of Bollywood. It prides itself at having produced some memorable classics featuring the industry's biggest stars. With a young team at the helm, Pramod films is<br> now all geared up for a bold step into the future.</div>
+      </div>
+      <div class="absolute bottom-7 h-center tc">
+          <a class="white no-underline f4 pa3 fade-link o-0 our-link" href="">Our</a>
+          <a class="white no-underline f4 pa3 fade-link o-0 films-link" href="">Films</a>
+          <a class="white no-underline f4 pa3 fade-link o-0 speak-link" href="">Speak</a>
+      </div>
+      <a class="our-link" href="">
+        <img src="images/down-arrow.png" class="absolute bottom-2 h-center tc arrow-down" alt="">
+      </a>
+    </section>
+
+    <section id="our" class="bg-white-90 relative pb6">
+      <div id="nav" class="z-1 w-100">
+        <div class="cf w-75 tc center z-1 pt3 pb3">
+            <img src="images/pramod-menu-logo.png" alt="" class="fl w300 home-link curp">
+            <div class="fr pt-2">
+              <a class="f4 yellow no-underline pl3 our-link" data-scroll="our" id="our-link" href="">Our</a>
+              <a class="f4 yellow no-underline pl3 films-link" data-scroll="films" id="films-link" href="">Films</a>
+              <a class="f4 yellow no-underline pl3 speak-link" data-scroll="speak" id="speak-link" href="">Speak</a>
+            </div>
+        </div>
+      </div>
+      <div class="w-60 tc center mt4">
+        <div class="mb4">
+          <img src="images/heading-decorator-left.png" class="dib v-mid" alt="">
+          <div class="f1-large f2 fw7 dib v-mid tiempos ttu pl2 pr2">Pramod Films</div>
+          <img src="images/heading-decorator-right.png" class="dib v-mid" alt="">
+        </div>
+        <p class="lh-copy">Pramod Films is one of India's most prestigious film production houses. With our first film dating back to 1958, our history is closely intertwined with that of Bollywood. We pride ourselves at having produced some memorable classics featuring some of the industry's biggest stars. With a young team at the helm, We are now all geared up for a bold step into the future.</p>
+        
+        <!--<div class="cf center">
+          <div class="fl w-50 tr">
+            <img class="w-33" src="images/innovative.jpg" alt="">
+          </div>
+          <div class="fr w-50">
+            <p class="lh-copy tl ml4 mt0 w-80">Pramod Films has partnered with Innovative films headed by Pradeep Chakravorty (The late Pramod Chakravorty's son). 'Deva' would be the first film produced by them and they are looking into producing more films under the regional space.</p>
+          </div>
+        </div>-->
+
+        <img class="w-33" src="images/innovative.jpg" alt="">
+        <p class="lh-copy">Pramod Films has partnered with Innovative films headed by Pradeep Chakravorty (The late Pramod Chakravorty's son). 'Deva' would be the first film produced by them and they are looking into producing more films under the regional space.</p>
+        
+        <p class="lh-copy db">Currently, Pramod films is lead by the founder's grandson Prateek Chakravorty. After a generation, we are back in reckoning, starting with some avant garde projects in Hindi, Marathi and Bengali. Our latest projects in the works are 'Deva' in Marathi and an untitled project in Tamil - both remakes of the cult Malayalam hit 'Charlie'.</p>
+
+        <img src="images/content-bottom-decorator.png" class="db center mb3" alt="">
+        <a class="link" href="https://en.wikipedia.org/wiki/Pramod_Chakravorty" target="_blank">
+          <img class="pa2" src="images/wiki.png" alt="">
+        </a>
+        <a class="link" href="https://twitter.com/PramodFilms" target="_blank">
+          <img class="pa2" src="images/twitter.png" alt="">
+        </a>
+        <a class="link" href="https://www.facebook.com/PramodFilms/" target="_blank">
+          <img class="pa2" src="images/facebook.png" alt="">
+        </a>
+        
+      </div>
+    </section>
+
+    <section class="h-80 bg-white relative dn-mobile">
+      <div class="w-80 tc center cf pt12 absolute h-center">
+        <div class="fl js-pramod-bio">
+          <div class="dib v-mid tc mr4 js-pramod-desig">
+            <img src="images/decorator-top.png" alt="" class="db center mb2">
+            <img src="images/mush-outline.png" alt="" class="db center mb2">
+            <div class="fw7 f3">Pramod</div>
+            <div class="fw7 f3 mb3">Chakravorty</div>
+            <div class="lh-copy mb2">Founder</div>
+            <div class="lh-copy mb2">Producer</div>
+            <div class="lh-copy mb2">Director</div>
+            <img src="images/decorator-bottom.png" alt="" class="db center">
+          </div>
+          <div class="dib v-mid lh-solid relative info-image js-pramod-pic">
+            <img src="images/pramod-bio-pic.png" alt="">
+            <div class="frame"></div>
+            <div class="mask">
+                <div class="content-block">Pramod Chakravorty, the director and producer of the 1966 classic Love in Tokyo, was a prolific visionary filmmaker in India especially in the 60s and 70s. He was a true example of the rags to riches story, where at the age of 20, he came leaving his family in Calcutta, boarded a moving train on impulse and landed in the dream city of Bombay with little money ...</div>
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Pramod_Chakravorty" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                  
+                </div>
+            </div>
+          </div>
+          <div class="absolute vis-hidden js-pramod-detail pramod-detail">
+            <div class="f2 mb2">Pramod Chakravorty</div>
+            <div>Pramod Chakravorty, the director and producer of the 1966 classic Love in Tokyo, was a prolific visionary filmmaker in India who was among the very successful and prevalent filmmakers of his time especially during the 1960’s-70s. He was a true example of the rags to riches story, where at the age of 20, he came leaving his family in Calcutta, boarded a moving train on impulse and landed in the dream city of Bombay with little money, no place to live, no contacts to refer to and no direction of where life would take him forward.<br><br> 
+            Destiny had it, after several odd jobs he discovered intrigue in cinema, a relatively new phenomenon at that time and finally found his passion to pursue filmmaking.  Slowly but surely with determination, observation, lot of struggle and with the perseverance to win, he lived up to build an empire and his company of now more than 50 years called Pramod Films.  He made 17 movies in his career span with a very impressive track record of rendering entertaining Jubilee hits across genres. He also had a knack of spotting talent and many of his discoveries have become industry stalwarts in the future.</div>
+            <img class="center db mt2" src="images/content-bottom-decorator.png" alt="">
+            <div class="js-pramod-close close-button curp">&larr; back</div>
+          </div>
+        </div>
+
+        
+
+        <div class="fr js-prateek-bio">
+          <div class="absolute vis-hidden js-prateek-detail prateek-detail">
+            <div class="f2 mb2">Prateek Chakravorty</div>
+            <div>Film making skipped a generation and the proprietorship of his empire was passed to his grandson Prateek Chakravorty who is also getting his foothold in the industry in steps of his grandfather. In his words, Prateek calls himself the I-PAWD man; i.e. I- Produce, Act, Write & Direct. After completing his MBA in Marketing & International Business, his calling also was towards filmmaking and the business of cinema. <br><br>
+              He made his debut in a family comedy (Fam_Com) in 2012 called “From Sydney with Love” where in a quirky unique manner he translated his University experience in Australia and weaved a Fresh off beat love story around it. There after he produced few other fresh Indian movies and an international celebrity chat show called “Born Stylish.” Currently he is working on a pre production on a crossover English film to go on floor soon and also writing and directing a dark, gritty television series for HBO expected to take off in early 2017 along with producing other movies in India.
+            </div>
+            <img class="center db mt2" src="images/content-bottom-decorator.png" alt="">
+            <div class="js-prateek-close close-button curp">back &rarr;</div>
+          </div>
+          <div class="dib v-mid lh-solid relative info-image mt2 js-prateek-pic">
+            <img src="images/prateek-bio-pic.png" alt="">
+            <div class="frame"></div>
+            <div class="mask">
+                <div class="content-block">Film making skipped a generation and the proprietorship of his empire was passed to his grandson Prateek Chakravorty who is also getting his foothold in the industry. In his words, Prateek calls himself the I-PAWD man; i.e. I- Produce, Act, Write & Direct. After completing his MBA in Marketing & International Business, his calling also was towards films ...</div>
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://twitter.com/desiboboprateek" target="_blank">
+                    <img src="images/twitter-white.png" alt="">
+                  </a>
+                </div>
+            </div>
+          </div>
+          <div class="dib tc v-mid ml4 js-prateek-desig">
+            <img src="images/decorator-top.png" alt="" class="db center mb2">
+            <img src="images/mush-solid.png" alt="" class="db center mb2">
+            <div class="fw7 f3">Prateek</div>
+            <div class="fw7 f3 mb3">Chakravorty</div>
+            <div class="lh-copy mb2">CEO</div>
+            <div class="lh-copy mb2">Producer</div>
+            <div class="lh-copy mb2">Director</div>
+            <img src="images/decorator-bottom.png" alt="" class="db center">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="films-section" class="bg-white">
+      <div class="w-80 tc center pt6 pb5">
+
+        <div class="mb4">
+          <img src="images/heading-decorator-left.png" class="dib v-mid" alt="">
+          <div class="f2 fw7 dib v-mid">Feature Films</div>
+          <img src="images/heading-decorator-right.png" class="dib v-mid" alt="">
+        </div>
+
+        <div id="films">
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/deva.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Deva</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">Marathi</div>
+                  <div class="black-90 mb2">Romance/Drama</div>
+                  <div class="fw4 black-90 mb2">Ankush</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <!--<img src="images/wiki-white.png" alt="">-->
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Deva</div>
+                <div class="tl lh-copy">Marathi (Coming Soon)</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/tujhya.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Tujhya Vin Mar Javaan</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">2015. Marathi</div>
+                  <div class="black-90 mb2">Romance/Drama</div>
+                  <div class="fw4 black-90 mb2">Vikas Patil · Prarthana Behere</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="http://www.justmarathi.com/tujhya-vin-mar-javaan/" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Tujhya Vin Mar Javaan</div>
+                <div class="tl lh-copy">2015. Marathi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/jomer-raja-dilo-bor.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Jomer Raja Dilo Bor</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">2015. Bengali</div>
+                  <div class="black-90 mb2">Romance/Comedy</div>
+                  <div class="fw4 black-90 mb2">Payel Sarkar · Abir Chatterjee</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Jomer_Raja_Dilo_Bor" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Jomer Raja Dilo Bor</div>
+                <div class="tl lh-copy">2015. Bengali</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/sydney.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">From Sydney with love</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">2012. Hindi</div>
+                  <div class="black-90 mb2">Family/Comedy</div>
+                  <div class="fw4 black-90 mb2">Sharad Malhotra · Bidita Bag</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/From_Sydney_with_Love" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">From Sydney with love</div>
+                <div class="tl lh-copy">2012. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/barood.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Barood</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1998. Hindi</div>
+                  <div class="black-90 mb2">Action/Drama</div>
+                  <div class="fw4 black-90 mb2">Akshay Kumar · Raveena Tandon</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Barood_(1998_film)" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Barood</div>
+                <div class="tl lh-copy">1998. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/deedar.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Deedar</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1992. Hindi</div>
+                  <div class="black-90 mb2">Romance/Drama</div>
+                  <div class="fw4 black-90 mb2">Akshay Kumar · Karishma Kapoor</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Deedar_(1992_film)" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Deedar</div>
+                <div class="tl lh-copy">1992 · Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/shatru.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Shatru</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1986. Hindi</div>
+                  <div class="black-90 mb2">Action/Drama</div>
+                  <div class="fw4 black-90 mb2">Rajesh Khanna · Shabana Sadique</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Shatru" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Shatru</div>
+                <div class="tl lh-copy">1986. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/jagir.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Jagir</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1984. Hindi</div>
+                  <div class="black-90 mb2">Action/Drama</div>
+                  <div class="fw4 black-90 mb2">Dharmendra · Zeenat Aman</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Jagir_(1984_film)" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Jagir</div>
+                <div class="tl lh-copy">1984. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/nastik.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Nastik</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1983. Hindi</div>
+                  <div class="black-90 mb2">Drama</div>
+                  <div class="fw4 black-90 mb2">Amitabh Bachan · Hema Malini</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Nastik_(1983_film)" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Nastik</div>
+                <div class="tl lh-copy">1983. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/jyoti.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Jyoti</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1981. Hindi</div>
+                  <div class="black-90 mb2">Family/Drama</div>
+                  <div class="fw4 black-90 mb2">Jitendra · Hema Malini</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Jyoti_(1981_film)" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Jyoti</div>
+                <div class="tl lh-copy">1981. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/azaad.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Azaad</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1978. Hindi</div>
+                  <div class="black-90 mb2">Action/Drama</div>
+                  <div class="fw4 black-90 mb2">Dharmendra · Hema Malini</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Azaad_(1978_film)" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Azaad</div>
+                <div class="tl lh-copy">1978. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/dream-girl.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Dream Girl</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1977. Hindi</div>
+                  <div class="black-90 mb2">Drama</div>
+                  <div class="fw4 black-90 mb2">Dharmendra · Hema Malini</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Dream_Girl_(1977_film)" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Dream Girl</div>
+                <div class="tl lh-copy">1977. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/warrant.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Warrant</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1975. Hindi</div>
+                  <div class="black-90 mb2">Action/Drama</div>
+                  <div class="fw4 black-90 mb2">Dev Anand · Zeenat Aman</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Warrant_(film)" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Warrant</div>
+                <div class="tl lh-copy">1975. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/jugnu.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Jugnu</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1973. Hindi</div>
+                  <div class="black-90 mb2">Thriller/Drama</div>
+                  <div class="fw4 black-90 mb2">Dharmendra · Hema Malini</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Jugnu" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Jugnu</div>
+                <div class="tl lh-copy">1973. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/naya-zamana.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Naya Zamana</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1971. Hindi</div>
+                  <div class="black-90 mb2">Romance/Drama</div>
+                  <div class="fw4 black-90 mb2">Dharmendra · Hema Malini</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Naya_Zamana_(1971_film)" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Naya Zamana</div>
+                <div class="tl lh-copy">1971. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/tumse.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Tumse Achha Kaun Hai</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1969. Hindi</div>
+                  <div class="black-90 mb2">Family Drama</div>
+                  <div class="fw4 black-90 mb2">Shammi Kapoor, Babita Kapoor</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="http://www.imdb.com/title/tt0158294/" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Tumse Achha Kaun Hai</div>
+                <div class="tl lh-copy">1969. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/love-in-tokyo.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Love in Tokyo</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1966. Hindi</div>
+                  <div class="black-90 mb2">Romance/Drama</div>
+                  <div class="fw4 black-90 mb2">Joy Muherjee, Asha Parekh</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Love_in_Tokyo" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Love in Tokyo</div>
+                <div class="tl lh-copy">1966. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/ziddi.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Ziddi</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1964. Hindi</div>
+                  <div class="black-90 mb2">Romance/Drama</div>
+                  <div class="fw4 black-90 mb2">Joy Muherjee, Asha Parekh</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Ziddi_(1964_film)" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Ziddi</div>
+                <div class="tl lh-copy">1964. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/passport.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">Passport</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1961. Hindi</div>
+                  <div class="black-90 mb2">Romance/Drama</div>
+                  <div class="fw4 black-90 mb2">Madhubala, Pradeep Kumar</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="http://www.imdb.com/title/tt0134885/" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">Passport</div>
+                <div class="tl lh-copy">1961. Hindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-25 carousel-slide">
+            <div class="dib v-mid lh-solid relative info-image">
+              <img src="images/films/12-o-clock.png" alt="">
+              <div class="frame"></div>
+              <div class="mask">
+                <div class="content-block tc">
+                  <div class="f3">12 o clock</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">1958. Hindi</div>
+                  <div class="black-90 mb2">Thriller/Drama</div>
+                  <div class="fw4 black-90 mb2">Guru Dutt, Waheeda Rehman</div>
+                </div>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/12_O%27Clock_(film)" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="caption absolute">
+                <div class="tl lh-copy">12 o clock</div>
+                <div class="tl lh-copy">1958. Hindi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb4 pt-3">
+          <img src="images/heading-decorator-left.png" class="dib v-mid" alt="">
+          <div class="f2 fw7 dib v-mid">Television</div>
+          <img src="images/heading-decorator-right.png" class="dib v-mid" alt="">
+        </div>
+
+
+          <div class="dib v-mid lh-solid relative info-image">
+              
+                <img src="images/films/born-stylish.png" style="max-height: 320px;" alt="">
+              
+              <div class="frame"></div>
+              
+              <div class="mask">
+                <a class="link" href="https://www.youtube.com/playlist?list=PL6VmhTLMTHInojza-4_0_nJDTA8B8iITC" target="_blank">
+                <div class="content-block tc">
+                  <div class="f3 white">Born Stylish</div>
+                  <img src="images/decoroator-white-bottom.png" alt="">
+                  <div class="black-90 mb2">2015. Vh1</div>
+                  <div class="black-90 mb2">Lifestyle Show</div>
+                  <div class="fw4 black-90 mb2">1 Season, 8 Episodes</div>
+                </div>
+                </a>
+                
+                <div class="content-block db absolute bottom-2 w-100 tc left-0">
+                  <a href="https://en.wikipedia.org/wiki/Born_Stylish" target="_blank">
+                    <img src="images/wiki-white.png" alt="">
+                  </a>
+                </div>
+              </div>
+              
+              <div class="caption absolute">
+                <div class="tl lh-copy">Born Stylish</div>
+                <div class="tl lh-copy">2015. Vh1</div>
+              </div>
+            </div>
+
+
+        </div>
+
+        
+
+    </section>
+
+    <section id="speak" class="bg-white relative pb3">
+
+    <div class="w-75 tc center pt6">
+      <div class="mb4">
+        <img src="images/heading-decorator-left.png" class="dib v-mid" alt="">
+        <div class="f2 fw7 dib v-mid">Contact Us</div>
+        <img src="images/heading-decorator-right.png" class="dib v-mid" alt="">
+      </div>
+
+      <div class="w-80 tc cf mb5 mt5 center ml0-large mr0-large">
+        <div class="fl-large ml0-large mr0-large center w-50 address-block bg-yellow-80 lh-copy tl pa5">
+          <div class="f3">Address</div>
+          Pramod Films, <br>
+          63-A, Amiya Apartments, <br>
+          Linking Road, Santa cruz west, <br>
+          Mumbai - 400054 <br>
+          <a class="link" href="mailto:hello@pramodfilms.co.in">hello@pramodfilms.co.in</a>
+        </div>
+
+        
+
+        <div class="fr w-50 pl4 dn-mobile">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.5898772721384!2d72.83220751507679!3d19.081761287084653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c90e6740a08b%3A0x17eb1ecd5461f9d3!2sLinking+Rd%2C+Santacruz+West%2C+Mumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1473041164747" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          
+        </div>
+      </div>
+    </div>
+
+     
+
+    </section>
 
   </body>
 </html>

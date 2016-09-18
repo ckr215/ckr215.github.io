@@ -25,7 +25,9 @@
     "normalize.css": "^4.2.0",
     "tachyons-cli": "^1.0.3",
     "tachyons-modules": "^1.1.8",
-    "watch": "^0.19.2"
+    "watch": "^0.19.2",
+    "waypoint": "^0.2.8",
+    "waypoints": "^4.0.0"
   },
   "contributors": [
     {

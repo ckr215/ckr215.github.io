@@ -45,3 +45,7 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.curp {
+  cursor: pointer;
+}

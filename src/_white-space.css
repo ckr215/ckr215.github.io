@@ -8,6 +8,7 @@
 .ws-normal { white-space: normal; }
 .nowrap { white-space: nowrap; }
 .pre { white-space: pre; }
+.preline { white-space: pre-line; }
 
 @media (--breakpoint-not-small) {
   .ws-normal-ns { white-space: normal; }
