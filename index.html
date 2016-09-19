@@ -76,13 +76,17 @@
 
         <img src="images/content-bottom-decorator.png" class="db center mb3" alt="">
         <a class="link" href="https://en.wikipedia.org/wiki/Pramod_Chakravorty" target="_blank">
-          <img class="pa2" src="images/wiki.png" alt="">
+          <img class="pa2" src="images/wiki-yellow.png" alt="">
         </a>
         <a class="link" href="https://twitter.com/PramodFilms" target="_blank">
           <img class="pa2" src="images/twitter.png" alt="">
         </a>
         <a class="link" href="https://www.facebook.com/PramodFilms/" target="_blank">
           <img class="pa2" src="images/facebook.png" alt="">
+        </a>
+
+        <a class="link" href="https://www.instagram.com/pramodfilms/" target="_blank">
+          <img class="pa2" src="images/insta-yellow.png" alt="">
         </a>
         
       </div>
@@ -161,7 +165,7 @@
     </section>
 
     <section id="films-section" class="bg-white">
-      <div class="w-80 tc center pt6 pb5">
+      <div class="w-80 tc center pt6 pb5 relative">
 
         <div class="mb4">
           <img src="images/heading-decorator-left.png" class="dib v-mid" alt="">
@@ -169,8 +173,80 @@
           <img src="images/heading-decorator-right.png" class="dib v-mid" alt="">
         </div>
 
-        <div id="films">
-          <div class="w-25 carousel-slide">
+        <div class="tl absolute mt4">
+          <div class="dib v-top js-film-detail-column vis-hidden" style="max-width: 20%;">
+            <div class="info-image relative">
+              <img class="db js-film-image" src="" alt="">
+              <div class="frame expanded"></div>
+            </div>
+            
+            <!--<button>Watch Movie</button>-->
+          </div><!--
+          --><div class="dib w-80 v-top pl5 js-film-detail-column vis-hidden">
+            <div class="cf">
+              <div class="js-film-title f3 fw7"></div>
+              <div class="fl v-top">
+                <span class="js-film-date"></span> . 
+                <span class="js-film-language"></span> . 
+                <span class="js-film-genre"></span>
+              </div>
+              <div class="fr v-top js-film-back curp close-button right-0">&larr; back</div>
+            </div>
+            <div class="dib w-50 v-top">
+              <div class="f4 fw7 i mt3">Cast</div>
+              <div class="js-film-cast mb3"></div>
+              <div class="f4 fw7 i">Crew</div>
+              <div class="js-film-crew mb3">
+                <!--<div>
+                  <div class="dib js-film-designation">Director</div> 
+                  <div class="dib"> - </div>
+                  <div class="dib js-film-person">Pramod Chakravorty</div>
+                </div>
+                <div>
+                  <div class="dib">Director</div> 
+                  <div class="dib"> - </div>
+                  <div class="dib">Pramod Chakravorty</div>
+                </div>
+                <div>
+                  <div class="dib">Director</div> 
+                  <div class="dib"> - </div>
+                  <div class="dib">Pramod Chakravorty</div>
+                </div>
+                <div>
+                  <div class="dib">Director</div> 
+                  <div class="dib"> - </div>
+                  <div class="dib">Pramod Chakravorty</div>
+                </div>-->
+              </div>
+              <a class="js-full-crew i mb3" href="" target="_blank">Full cast &amp; crew</a>
+              <div class="mt3">
+                <a class="link js-film-wiki mr2" target="_blank" href="">
+                  <img class="w3" src="images/wiki.png" alt="">
+                </a>
+                <a class="link js-film-fb mr2" target="_blank" href="">
+                  <img class="w3" src="images/fb.png" alt="">
+                </a>
+                <a class="link js-film-tweet mr2" target="_blank" href="">
+                  <img class="w3" src="images/tweet.png" alt="">
+                </a>
+                <a class="link js-film-insta mr2" target="_blank" href="">
+                  <img class="w3" src="images/insta.png" alt="">
+                </a>
+                <a class="link js-film-yt mr2" target="_blank" href="">
+                  <img class="w3" src="images/yt.png" alt="">
+                </a>
+              </div>
+            </div><!--
+            --><div class="dib w-50 v-top pl4">
+              <div class="f4 fw7 i mt3">Plot</div>
+              <div class="js-film-plot mb3"></div>
+              <!--<div class="f4 fw7">Photos</div>-->
+            </div>
+          </div>      
+        </div>
+
+        <div id="films" class="js-films-slider">
+          <div class="w-25 carousel-slide" data-id="0">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/deva.png" alt="">
               <div class="frame"></div>
@@ -193,7 +269,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="1">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/tujhya.png" alt="">
               <div class="frame"></div>
@@ -218,7 +294,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="2">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/jomer-raja-dilo-bor.png" alt="">
               <div class="frame"></div>
@@ -243,7 +319,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="3">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/sydney.png" alt="">
               <div class="frame"></div>
@@ -268,7 +344,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="4">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/barood.png" alt="">
               <div class="frame"></div>
@@ -293,7 +369,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="5">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/deedar.png" alt="">
               <div class="frame"></div>
@@ -318,7 +394,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="6">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/shatru.png" alt="">
               <div class="frame"></div>
@@ -343,7 +419,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="7">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/jagir.png" alt="">
               <div class="frame"></div>
@@ -368,7 +444,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="8">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/nastik.png" alt="">
               <div class="frame"></div>
@@ -393,7 +469,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="9">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/jyoti.png" alt="">
               <div class="frame"></div>
@@ -418,7 +494,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="10">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/azaad.png" alt="">
               <div class="frame"></div>
@@ -443,7 +519,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="11">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/dream-girl.png" alt="">
               <div class="frame"></div>
@@ -468,7 +544,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="12">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/warrant.png" alt="">
               <div class="frame"></div>
@@ -493,7 +569,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="13">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/jugnu.png" alt="">
               <div class="frame"></div>
@@ -518,7 +594,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="14">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/naya-zamana.png" alt="">
               <div class="frame"></div>
@@ -543,7 +619,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="15">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/tumse.png" alt="">
               <div class="frame"></div>
@@ -568,7 +644,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="16">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/love-in-tokyo.png" alt="">
               <div class="frame"></div>
@@ -593,7 +669,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="17">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/ziddi.png" alt="">
               <div class="frame"></div>
@@ -618,7 +694,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="18">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/passport.png" alt="">
               <div class="frame"></div>
@@ -643,7 +719,7 @@
               </div>
             </div>
           </div>
-          <div class="w-25 carousel-slide">
+          <div class="w-25 carousel-slide" data-id="19">
             <div class="dib v-mid lh-solid relative info-image">
               <img src="images/films/12-o-clock.png" alt="">
               <div class="frame"></div>
@@ -714,32 +790,29 @@
 
     </section>
 
-    <section id="speak" class="bg-white relative pb3">
+    <section id="speak" class="relative pb3 speak-section h-vh">
 
     <div class="w-75 tc center pt6">
-      <div class="mb4">
-        <img src="images/heading-decorator-left.png" class="dib v-mid" alt="">
-        <div class="f2 fw7 dib v-mid">Contact Us</div>
-        <img src="images/heading-decorator-right.png" class="dib v-mid" alt="">
-      </div>
 
-      <div class="w-80 tc cf mb5 mt5 center ml0-large mr0-large">
-        <div class="fl-large ml0-large mr0-large center w-50 address-block bg-yellow-80 lh-copy tl pa5">
+      <div class="w-80 tc cf mb5 mt5 center ml0-large">
+        <div class="fl-large ml0-large mr0-large center w-50 address-block white lh-copy tl">
           <div class="f3">Address</div>
           Pramod Films, <br>
           63-A, Amiya Apartments, <br>
           Linking Road, Santa cruz west, <br>
           Mumbai - 400054 <br>
-          <a class="link" href="mailto:hello@pramodfilms.co.in">hello@pramodfilms.co.in</a>
+          <a class="link white" href="mailto:hello@pramodfilms.co.in">hello@pramodfilms.co.in</a>
         </div>
 
         
 
+        
         <div class="fr w-50 pl4 dn-mobile">
-
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.5898772721384!2d72.83220751507679!3d19.081761287084653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c90e6740a08b%3A0x17eb1ecd5461f9d3!2sLinking+Rd%2C+Santacruz+West%2C+Mumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1473041164747" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <a style="width: 300px;height: 200px;display: block;float: right;margin-right: -200px;" class="link" target="_blank" href="https://www.google.co.in/maps/search/amiya+apartment+linking+road+santa+cruz/@19.0792332,72.8353847,17z/data=!3m1!4b1"></a>
+          <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.5898772721384!2d72.83220751507679!3d19.081761287084653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c90e6740a08b%3A0x17eb1ecd5461f9d3!2sLinking+Rd%2C+Santacruz+West%2C+Mumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1473041164747" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
           
         </div>
+        
       </div>
     </div>
 

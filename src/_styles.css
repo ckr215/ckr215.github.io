@@ -110,7 +110,7 @@ body, html {
   z-index: -1;
 }
 
-.info-image:hover .frame {
+.info-image:hover .frame, .frame.expanded {
   transform: scale(1);
   opacity: 1;
   transition: all ease-in-out 0.2s;
@@ -215,6 +215,11 @@ body, html {
 
 .tiempos {
   font-family: 'Tiempos';
+}
+
+.speak-section {
+  background: url('/images/contact-bg.png') no-repeat;
+  background-size: cover;
 }
 
 @font-face {
