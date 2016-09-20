@@ -233,12 +233,12 @@ var films = [
     year: 'Coming Soon',
     language: 'Marathi',
     genre: 'Romance/Drama',
-    cast: 'Ankush Choudhari',
+    cast: 'Ankush Chaudhary, Tejaswini Pandit, Spruha Joshi',
     poster: 'images/films/deva.png',
     crew: {
-      '- To be announced': ''
+      'Director': 'Murali Nallappa'
     },
-    plot: 'Deva is a remake of the cult malayalam hit "Charlie"',
+    plot: 'An independent young girl occupies a new house and is fascinated by the eccentric character of the house\'s previous occupant. She goes in search of "Deva", who turns out to be an elusive and mysterious person.',
     socialMedia: {
       twitter: 'https://twitter.com/devathefilm',
       instagram: 'https://www.instagram.com/devathefilm/',
@@ -248,30 +248,6 @@ var films = [
   },
   {
     id: 1,
-    title: 'Tujhya Vin Mar Javaan',
-    year: '2015',
-    language: 'Marathi',
-    genre: 'Romance/Drama',
-    cast: 'Vikas Patill , Prarthana Behere, Atul Parchure, Prateeksha Lonkar',
-    poster: 'images/films/tujhya.png',
-    crew: {
-      'Directors' : 'Murali Nallappa, Ashok Karlekar',
-      'Producers' : 'Prateek Chakravorthy, Murali Nallappa',
-      'Music' : 'Avadhoot Gupte',
-      'Written By' :  'Anil Pawar. MuraliNallappa',
-      'Dialogues' : 'Shirish Latkar',
-      'Cinematography' :  'Bharat R. Parthasarathy'
-    },
-    fullCrew: 'http://www.justmarathi.com/tujhya-vin-mar-javaan/',
-    plot: 'The story revolves around Aniket and Nisha who are intensely in love with each other.',
-    socialMedia: {
-      yt: 'https://www.youtube.com/watch?v=w4cTbXVchdQ',
-      facebook: 'https://www.facebook.com/TVMJFilm/'
-    },
-    photos: ['http://flickr.com','http://flickr.com']
-  },
-  {
-    id: 2,
     title: 'Jomer Raja Dilo Bor',
     year: '2015',
     language: 'Bengali',
@@ -293,6 +269,30 @@ var films = [
       twitter: 'https://twitter.com/jrdbthefilm',
       instagram: 'https://www.instagram.com/jomerrajadilobor/',
       facebook: 'https://www.facebook.com/JRDBTheFilm/'
+    },
+    photos: ['http://flickr.com','http://flickr.com']
+  },
+  {
+    id: 2,
+    title: 'Tujhya Vin Mar Javaan',
+    year: '2015',
+    language: 'Marathi',
+    genre: 'Romance/Drama',
+    cast: 'Vikas Patill , Prarthana Behere, Atul Parchure, Prateeksha Lonkar',
+    poster: 'images/films/tujhya.png',
+    crew: {
+      'Directors' : 'Murali Nallappa, Ashok Karlekar',
+      'Producers' : 'Prateek Chakravorthy, Murali Nallappa',
+      'Music' : 'Avadhoot Gupte',
+      'Written By' :  'Anil Pawar. MuraliNallappa',
+      'Dialogues' : 'Shirish Latkar',
+      'Cinematography' :  'Bharat R. Parthasarathy'
+    },
+    fullCrew: 'http://www.justmarathi.com/tujhya-vin-mar-javaan/',
+    plot: 'The story revolves around Aniket and Nisha who are intensely in love with each other.',
+    socialMedia: {
+      yt: 'https://www.youtube.com/watch?v=w4cTbXVchdQ',
+      facebook: 'https://www.facebook.com/TVMJFilm/'
     },
     photos: ['http://flickr.com','http://flickr.com']
   },

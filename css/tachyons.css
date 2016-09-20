@@ -1356,6 +1356,7 @@ body, html { height: 100%; }
 .pt12 { padding-top: 12rem; }
 #nav a.current { color: red; -webkit-transition: color ease-in-out 0.2s; transition: color ease-in-out 0.2s; }
 .close-button { position: absolute; top: -28px; font-size: 1rem; color: #f3a801; }
+.close-button:hover { color: red; -webkit-transition: all ease-in-out 0.2s; transition: all ease-in-out 0.2s; }
 .flickity-prev-next-button .arrow { fill: #f3a801; }
 .tiempos { font-family: 'Tiempos'; }
 .speak-section { background: url( '/images/contact-bg.png' ) no-repeat; background-size: cover; }

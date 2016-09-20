@@ -209,6 +209,11 @@ body, html {
   color: #f3a801;
 }
 
+.close-button:hover {
+  color: red;
+  transition: all ease-in-out 0.2s;
+}
+
 .flickity-prev-next-button .arrow {
     fill: #f3a801;
 }
