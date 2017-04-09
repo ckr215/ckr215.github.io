@@ -202,6 +202,7 @@ body, html {
   left: 50%;
   text-align: left;
   line-height: 1.5;
+  padding-right: 5%;
 }
 
 .prateek-detail {
@@ -210,6 +211,7 @@ body, html {
   right: 50%;
   text-align: left;
   line-height: 1.5;
+  padding-left: 5%;
 }
 
 .h-80 {
@@ -269,6 +271,23 @@ body, html {
     .carousel-slide {
       margin-right: 20px;
     }
+
+    .w-100-m {
+      width: 100%;
+    }
+
+    .w-50-m {
+      width: 50%;
+    }
+
+    .h-init {
+      height: initial;
+    }
+
+    .h-50-m {
+      height: 50%;
+    }
+
 
 }
 
