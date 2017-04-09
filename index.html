@@ -9,6 +9,8 @@
     <meta name="description" content="">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.3/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/remodal@1.1.0/dist/remodal.css">
+    <link rel="stylesheet" href="https://unpkg.com/remodal@1.1.0/dist/remodal-default-theme.css">
     <link rel="stylesheet" href="/css/tachyons.css">
     <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/waypoints@4.0.0/lib/jquery.waypoints.min.js"></script>
@@ -16,6 +18,7 @@
     <script src="https://unpkg.com/flickity@2.0.3/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/velocity-animate@1.2.3/velocity.min.js"></script>
     <script src="https://unpkg.com/velocity-animate@1.2.3/velocity.ui.min.js"></script>
+    <script src="https://unpkg.com/remodal@1.1.0/dist/remodal.js"></script>
     <script src=""></script>
     <script src="/js/site.js"></script>
   </head>
@@ -30,7 +33,7 @@
         <img src="images/logo-white.png" class="center pb2 intro" alt="">
         <div class="intro" style="height: 3px; background: #fff; width: 100px;margin: 0 auto;margin-top: 0.5rem;margin-bottom: 0.5rem;"></div>
         <div class="f1 fw7 db tiempos ttu white-80 mt3 mb3 intro">Pramod Films</div>
-        <div class="lh-copy intro" style="font-size:1.1rem">Pramod Films is one of India's most prestigious film production houses. With its first film dating back to 1962, its history is closely intertwined with that of Bollywood. It prides itself at having produced some memorable classics featuring the industry's biggest stars. With a young team at the helm, Pramod films is<br> now all geared up for a bold step into the future.</div>
+        <div class="lh-copy intro" style="font-size:1.1rem">Pramod Films is a company formed out of the thirst to succeed by Pramod Chakravorty, and since its inception in 1962 is responsible for churning out numerous commercially successful blockbuster cinema with substance. Pramod Films has completed over 50 years  in the Indian film industry and with a young team at the helm,<br> we are all set for the future.</div>
       </div>
       <div class="absolute bottom-7 h-center tc">
           <a class="white no-underline f4 pa3 fade-link o-0 our-link" href="">Our</a>
@@ -42,10 +45,10 @@
       </a>
     </section>
 
-    <section id="our" class="bg-white-90 relative pb6">
+    <section id="our" class="bg-white-90 relative pb6 h-vh">
       <div id="nav" class="z-1 w-100">
         <div class="cf w-75 tc center z-1 pt3 pb3">
-            <img src="images/pramod-menu-logo.png" alt="" class="fl w300 home-link curp">
+            <div class="fl w300 home-link curp menu-logo relative"></div>
             <div class="fr pt-2">
               <a class="f4 yellow no-underline pl3 our-link" data-scroll="our" id="our-link" href="">Our</a>
               <a class="f4 yellow no-underline pl3 films-link" data-scroll="films" id="films-link" href="">Films</a>
@@ -70,10 +73,16 @@
           </div>
         </div>-->
 
-        <img class="w-33" src="images/innovative.jpg" alt="">
-        <p class="lh-copy">Pramod Films has partnered with Innovative films headed by Pradeep Chakravorty (The late Pramod Chakravorty's son). 'Deva' would be the first film produced by them and they are looking into producing more films under the regional space.</p>
+        <div class="remodal" data-remodal-id="modal">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <h1 class="fw7">Innovative Films</h1>
+          <img class="w-50" src="images/innovative.jpg" alt="">
+          <p class="lh-copy">Pramod Films has partnered with Innovative films headed by Pradeep Chakravorty (The late Pramod Chakravorty's son). 'Deva' would be the first film produced by them and they are looking into producing more films in the regional space.</p>
+        </div>
 
         <p class="lh-copy db">Currently, Pramod films is lead by the founder's grandson Prateek Chakravorty. After a generation, we are back in reckoning, starting with some avant garde projects in Hindi, Marathi and Bengali. Our latest projects in the works are 'Deva' in Marathi and an untitled project in Tamil.</p>
+
+        <a data-remodal-target="modal" class="red small-caps f4 mb3 db pointer">read about our sister concern</a>
 
         <img src="images/content-bottom-decorator.png" class="db center mb3" alt="">
         <a class="link" href="https://en.wikipedia.org/wiki/Pramod_Chakravorty" target="_blank">
@@ -397,7 +406,7 @@
           </div>
           <div class="w-25 carousel-slide" data-id="6">
             <div class="dib v-mid lh-solid relative info-image">
-              <img src="images/films/shatru.png" alt="">
+              <img src="images/films/shatru.png?1" alt="">
               <div class="frame"></div>
               <div class="mask">
                 <div class="content-block tc">
@@ -422,7 +431,7 @@
           </div>
           <div class="w-25 carousel-slide" data-id="7">
             <div class="dib v-mid lh-solid relative info-image">
-              <img src="images/films/jagir.png" alt="">
+              <img src="images/films/jagir-new.png?1" alt="">
               <div class="frame"></div>
               <div class="mask">
                 <div class="content-block tc">
@@ -472,7 +481,7 @@
           </div>
           <div class="w-25 carousel-slide" data-id="9">
             <div class="dib v-mid lh-solid relative info-image">
-              <img src="images/films/jyoti.png" alt="">
+              <img src="images/films/jyoti.png?1" alt="">
               <div class="frame"></div>
               <div class="mask">
                 <div class="content-block tc">
@@ -497,7 +506,7 @@
           </div>
           <div class="w-25 carousel-slide" data-id="10">
             <div class="dib v-mid lh-solid relative info-image">
-              <img src="images/films/azaad.png" alt="">
+              <img src="images/films/azaad.png?1" alt="">
               <div class="frame"></div>
               <div class="mask">
                 <div class="content-block tc">
@@ -572,7 +581,7 @@
           </div>
           <div class="w-25 carousel-slide" data-id="13">
             <div class="dib v-mid lh-solid relative info-image">
-              <img src="images/films/jugnu.png" alt="">
+              <img src="images/films/jugnu.png?1" alt="">
               <div class="frame"></div>
               <div class="mask">
                 <div class="content-block tc">
@@ -597,7 +606,7 @@
           </div>
           <div class="w-25 carousel-slide" data-id="14">
             <div class="dib v-mid lh-solid relative info-image">
-              <img src="images/films/naya-zamana.png" alt="">
+              <img src="images/films/naya-zamana.png?1" alt="">
               <div class="frame"></div>
               <div class="mask">
                 <div class="content-block tc">
@@ -622,7 +631,7 @@
           </div>
           <div class="w-25 carousel-slide" data-id="15">
             <div class="dib v-mid lh-solid relative info-image">
-              <img src="images/films/tumse.png" alt="">
+              <img src="images/films/tumse.png?1" alt="">
               <div class="frame"></div>
               <div class="mask">
                 <div class="content-block tc">
@@ -672,7 +681,7 @@
           </div>
           <div class="w-25 carousel-slide" data-id="17">
             <div class="dib v-mid lh-solid relative info-image">
-              <img src="images/films/ziddi.png" alt="">
+              <img src="images/films/ziddi.png?1" alt="">
               <div class="frame"></div>
               <div class="mask">
                 <div class="content-block tc">
