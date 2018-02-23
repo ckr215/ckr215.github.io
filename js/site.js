@@ -71,6 +71,15 @@ document.addEventListener("DOMContentLoaded", function() {
     freeScroll: true
   });
 
+  $('#short-films').flickity({
+    cellAlign: 'left',
+    pageDots: false,
+    contain: true,
+    groupCells: true,
+    freeScroll: true,
+    prevNextButtons: false
+  });
+
   $('.js-pramod-pic').on('click', function() {
     $('.js-pramod-desig, .js-prateek-bio').velocity({opacity:0}).css('pointer-events','none');  
     $('.js-pramod-pic').velocity({'left':'-20%'});
@@ -128,12 +137,12 @@ document.addEventListener("DOMContentLoaded", function() {
     $('#home').velocity('scroll');
   });
 
-  $('.carousel-slide').on('click', function(e) {
+  $('.js-carousel-slide').on('click', function(e) {
     $('.js-films-slider').css('pointer-events', 'none');
     $('.flickity-prev-next-button').velocity('transition.fadeOut');
-    var id = $(e.target).closest('.carousel-slide').attr('data-id');
+    var id = $(e.target).closest('.js-carousel-slide').attr('data-id');
     populateContent(id);
-    $('.carousel-slide.is-selected').velocity('transition.slideDownBigOut', {
+    $('.js-carousel-slide.is-selected').velocity('transition.slideDownBigOut', {
       stagger: 100, 
       display: 'inline-block', 
       complete: function() {
@@ -152,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
       display: 'inline-block',
       complete: function() {
         $('.js-films-slider').removeClass('vis-hidden');
-        $('.carousel-slide').velocity('transition.slideUpBigIn', { 
+        $('.js-carousel-slide').velocity('transition.slideUpBigIn', { 
           display: 'inline-block'
         });
       }
@@ -230,7 +239,7 @@ var films = [
   {
     id: 0,
     title: 'Deva',
-    year: 'Coming Soon',
+    year: '2017',
     language: 'Marathi',
     genre: 'Romance/Drama',
     cast: 'Ankush Chaudhary, Tejaswini Pandit, Spruha Joshi',
@@ -662,6 +671,28 @@ var films = [
       wiki: 'https://en.wikipedia.org/wiki/12_O%27Clock_(film)'
     },
     photos: ['http://flickr.com','http://flickr.com']
+  },
+  {
+    id: 20,
+    title: 'Lakshmi',
+    year: '2018',
+    language: 'Tamil',
+    genre: 'Dance/Drama',
+    cast: 'Prabhu Deva, Aishwarya Rajesh, Ditya Bhande',
+    poster: 'images/films/lakshmi.png',
+    crew: {
+      'Director' : 'AL Vijay',
+      'Producer' : 'Prateek Chakravorty, Shruti Nallappa',
+      'Music' : 'Sam CS',
+      'Written By': 'AL Vijay',
+      'Cinematography': 'Nirav Shah'
+    },
+    fullCrew: '',
+    plot: "A dancing legend meets an extraordinary student.",
+    socialMedia: {
+      wiki: ''
+    },
+    photos: []
   },
 
 ];
