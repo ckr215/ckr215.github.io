@@ -676,7 +676,7 @@ var films = [
     id: 20,
     title: 'Lakshmi',
     year: '2018',
-    language: 'Tamil',
+    language: 'Tamil/Telugu',
     genre: 'Dance/Drama',
     cast: 'Prabhu Deva, Aishwarya Rajesh, Ditya Bhande',
     poster: 'images/films/lakshmi.png',
