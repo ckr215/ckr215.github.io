@@ -76,8 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
     pageDots: false,
     contain: true,
     groupCells: true,
-    freeScroll: true,
-    prevNextButtons: false
+    freeScroll: true
   });
 
   $('.js-pramod-pic').on('click', function() {
