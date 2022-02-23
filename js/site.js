@@ -71,6 +71,14 @@ document.addEventListener("DOMContentLoaded", function() {
     freeScroll: true
   });
 
+  $('#coming-soon').flickity({
+    cellAlign: 'left',
+    pageDots: false,
+    contain: true,
+    groupCells: true,
+    freeScroll: true
+  });
+
   $('#short-films').flickity({
     cellAlign: 'left',
     pageDots: false,
