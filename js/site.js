@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function() {
 var films = [
   {
     id: 0,
-    title: 'Deva',
+    title: 'Daeva',
     year: '2017',
     language: 'Marathi',
     genre: 'Romance/Drama',
